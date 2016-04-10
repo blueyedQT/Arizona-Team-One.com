@@ -1,0 +1,19 @@
+[24-Jun-2015 17:59:58 UTC] WordPress database error Can't DROP 'slug'; check that column/key exists for query ALTER TABLE wp_terms DROP INDEX slug, ADD INDEX slug(slug(191)) made by wp_upgrade, pre_schema_upgrade
+[24-Jun-2015 21:13:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/sageten/public_html/blog/wp-content/themes/colorway/functions/admin-interface.php on line 200
+[25-Jun-2015 00:21:31 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/sageten/public_html/wp-includes/class-wp-image-editor-imagick.php on line 286
+[25-Jun-2015 00:24:09 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/sageten/public_html/wp-includes/class-wp-image-editor-imagick.php on line 286
+[25-Jun-2015 00:34:20 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/sageten/public_html/wp-includes/class-wp-image-editor-imagick.php on line 360
+[27-Jun-2015 23:31:58 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /home/sageten/public_html/wp-includes/class-wp-image-editor-imagick.php on line 349
+[10-Apr-2016 20:38:38 UTC] WordPress database error CREATE command denied to user 'ksanford_sageten'@'localhost' for table 'wp2_termmeta' for query 
+CREATE TABLE wp2_termmeta (
+  meta_id bigint(20) unsigned NOT NULL auto_increment,
+  term_id bigint(20) unsigned NOT NULL default '0',
+  meta_key varchar(255) default NULL,
+  meta_value longtext,
+  PRIMARY KEY  (meta_id),
+  KEY term_id (term_id),
+  KEY meta_key (meta_key(191))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci made by wp_upgrade, make_db_current_silent, dbDelta
+[10-Apr-2016 20:38:38 UTC] WordPress database error Table 'ksanford_sageten_wp1.wp2_termmeta' doesn't exist for query SHOW FULL COLUMNS FROM `wp2_termmeta` made by wp_upgrade, upgrade_all, upgrade_430, maybe_convert_table_to_utf8mb4
+[10-Apr-2016 20:40:41 UTC] WordPress database error Table 'ksanford_sageten_wp1.wp2_termmeta' doesn't exist for query SELECT term_id, meta_key, meta_value FROM wp2_termmeta WHERE term_id IN (6,5,15) ORDER BY meta_id ASC made by WP_Comments_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_List_Table->display_rows, WP_Comments_List_Table->single_row, WP_List_Table->single_row_columns, call_user_func, WP_Comments_List_Table->column_response, get_permalink, get_the_category, get_the_terms, wp_get_object_terms, update_termmeta_cache, update_meta_cache
+[10-Apr-2016 20:40:41 UTC] WordPress database error Table 'ksanford_sageten_wp1.wp2_termmeta' doesn't exist for query SELECT term_id, meta_key, meta_value FROM wp2_termmeta WHERE term_id IN (1) ORDER BY meta_id ASC made by WP_Comments_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_List_Table->display_rows, WP_Comments_List_Table->single_row, WP_List_Table->single_row_columns, call_user_func, WP_Comments_List_Table->column_response, get_permalink, get_the_category, get_the_terms, wp_get_object_terms, update_termmeta_cache, update_meta_cache
